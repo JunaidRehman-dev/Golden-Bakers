@@ -1,63 +1,70 @@
-  <!-- Name: Junaid Rehman  -->
-  <!-- roll_number: i263106  -->
-  <!-- class: SE-C  -->
-
-
-
-
+<!-- Name: Junaid Rehman -->
+<!-- Roll Number: i263106 -->
+<!-- Class: SE-C -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Golden Bakers</title>
+  <meta charset="UTF-8">
+  <title>Golden Bakers - Home</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h3 style="text-align: center;">Golden Cafe</h3>
-  <h3 style="text-align: center;">Baked daily · Small batch · Est. 2015</h3>
-  <h3 style="text-align: center;">Fresh from</h3>
-  <h1 style="text-align: center;">the Bakery</h1>
+  <nav class="navbar">
+    <a href="index.html" class="active">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
+  <div class="container">
+    <header class="hero">
+      <h3>Golden Cafe</h3>
+      <p class="tagline">Baked daily · Small batch · Est. 2015</p>
+      <h3>Fresh from</h3>
+      <h1>the Bakery</h1>
+    </header>
 
-  <img src="images/img_1.jpg" alt="image" id="small-right-img">
+    <div class="content-box">
+      <img src="images/img_1.jpg" alt="Fresh Bakery Pastry" id="small-right-img">
 
-  <!-- Your original table -->
-  <table>
-    <thead>
-      <tr>
-        <th>Pastries</th> 
-        
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Butter Croissant</td>
-        <td>              </td>
-        <td>              </td>
-        <td>              </td>
-        <td>  £3.20 </td>
-      </tr>
-      <tr>
-        <td>Pain au Chocolat</td>
-        <td>              </td>
-        <td>              </td>
-        <td>              </td>
-        <td>  £3.60 </td>
-      </tr>
-      <tr>
-        <td>Cinnamon Swirl</td>
-        <td>              </td>
-        <td>              </td>
-        <td>              </td>
-        <td>  £3.80 </td>
-      </tr>
-    </tbody>
-  </table>
+      <table>
+        <thead>
+          <tr>
+            <th>Pastries</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Butter Croissant</td>
+            <td>£3.20</td>
+          </tr>
+          <tr>
+            <td>Pain au Chocolat</td>
+            <td>£3.60</td>
+          </tr>
+          <tr>
+            <td>Cinnamon Swirl</td>
+            <td>£3.80</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="btn-area">
+        <button class="bakery-btn" onclick="sayHello()">Say Hello</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Golden Bakers | Crafted by Junaid Rehman (i263106 - SE-C)</p>
+  </footer>
 
   <script>
     function sayHello() {
       console.log("Say Hello button was clicked");
-      window.alert("Hello! Welcome to my page.");
+      window.alert("Hello! Welcome to Golden Bakers.");
     }
   </script>
 
