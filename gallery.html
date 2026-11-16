@@ -1,0 +1,89 @@
+<!-- Name: Junaid Rehman -->
+<!-- Roll Number: i263106 -->
+<!-- Class: SE-C -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Golden Bakers - Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .gallery-card {
+      background-color: #fffdf9;
+      border: 2px solid #d4a359;
+      border-radius: 8px;
+      padding: 12px;
+      text-align: center;
+    }
+    .gallery-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    .gallery-card p {
+      margin: 10px 0 0;
+      font-weight: bold;
+      color: #5c3317;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="gallery.html" class="active">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <header class="hero">
+      <h3>Golden Cafe</h3>
+      <p class="tagline">Fresh out of the oven · Small batch</p>
+      <h1>Bakery Gallery</h1>
+    </header>
+
+    <div class="gallery-grid">
+      <div class="gallery-card">
+        <img src="images/img_1.jpg" alt="Freshly Baked Croissants">
+        <p>Golden Butter Croissants</p>
+      </div>
+      <div class="gallery-card">
+        <img src="images/img_1.jpg" alt="Morning Pastry Platter">
+        <p>Morning Pastry Platter</p>
+      </div>
+      <div class="gallery-card">
+        <img src="images/bg.png" alt="Warm Bakery Interior">
+        <p>Artisan Baking Counter</p>
+      </div>
+      <div class="gallery-card">
+        <img src="images/img_1.jpg" alt="Cinnamon & Chocolate Specials">
+        <p>Weekend Bakery Specials</p>
+      </div>
+    </div>
+
+    <div class="btn-area">
+      <button class="bakery-btn" onclick="galleryNote()">Baking Schedule</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Golden Bakers | Crafted by Junaid Rehman (i263106 - SE-C)</p>
+  </footer>
+
+  <script>
+    function galleryNote() {
+      console.log("Baking Schedule button clicked on Gallery page");
+      window.alert("Fresh batches come out of the oven daily at 7:30 AM, 11:00 AM, and 4:00 PM!");
+    }
+  </script>
+
+</body>
+</html>
