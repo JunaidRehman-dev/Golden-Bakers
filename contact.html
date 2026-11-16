@@ -1,0 +1,105 @@
+<!-- Name: Junaid Rehman -->
+<!-- Roll Number: i263106 -->
+<!-- Class: SE-C -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Golden Bakers - Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      margin-top: 20px;
+    }
+    .info-box {
+      background-color: #fffdf9;
+      border: 2px solid #d4a359;
+      border-radius: 8px;
+      padding: 20px;
+    }
+    .info-box h2 {
+      margin-top: 0;
+      color: #5c3317;
+    }
+    .contact-form label {
+      display: block;
+      font-weight: bold;
+      margin-top: 12px;
+      color: #5c3317;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #d4a359;
+      border-radius: 5px;
+      font-family: Georgia, serif;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+
+  <div class="container">
+    <header class="hero">
+      <h3>Golden Cafe</h3>
+      <p class="tagline">Visit us or place a custom pastry order</p>
+      <h1>Contact Us</h1>
+    </header>
+
+    <div class="contact-grid">
+      <div class="info-box">
+        <h2>Visit the Bakery</h2>
+        <p><strong>Address:</strong><br>14 Artisan Lane, Bakery Quarter</p>
+        <p><strong>Opening Hours:</strong><br>Mon – Fri: 7:00 AM – 7:00 PM<br>Sat – Sun: 8:00 AM – 8:00 PM</p>
+        <p><strong>Phone:</strong><br>+44 20 7946 0821</p>
+        <p><strong>Email:</strong><br>hello@goldenbakers.co.uk</p>
+      </div>
+
+      <div class="info-box">
+        <h2>Send a Message</h2>
+        <form class="contact-form" onsubmit="submitInquiry(event)">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
+
+          <label for="email">Your Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+
+          <label for="message">Message / Pre-Order</label>
+          <textarea id="message" rows="4" placeholder="Write your message or pastry order..." required></textarea>
+
+          <div class="btn-area">
+            <button type="submit" class="bakery-btn">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Golden Bakers | Crafted by Junaid Rehman (i263106 - SE-C)</p>
+  </footer>
+
+  <script>
+    function submitInquiry(event) {
+      event.preventDefault();
+      const customerName = document.getElementById("name").value;
+      console.log("Contact form submitted by:", customerName);
+      window.alert("Thank you, " + customerName + "! Your message has been sent to Golden Bakers.");
+      document.querySelector(".contact-form").reset();
+    }
+  </script>
+
+</body>
+</html>
